@@ -1,0 +1,20 @@
+.navbar{
+    color: #fff;
+    font-size: 14px;
+
+    .container{
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .top-left{
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 25px;
+            }
+        }
+    }
+}

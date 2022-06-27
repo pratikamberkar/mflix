@@ -1,10 +1,10 @@
-import React from 'react';
-import './home.scss'
+import Navbar from '../components/Navbar';
+import './home.scss';
 
 const Home = () => {
   return (
     <div className='home'>
-         <h1>M-flix</h1>
+        <Navbar />
     </div>
   )
 }
