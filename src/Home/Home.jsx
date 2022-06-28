@@ -5,6 +5,8 @@ const Home = () => {
   return (
     <div className='home'>
         <Navbar />
+        <img width="100%" src="./images/flix-background.jpg" alt="M-Flix Logo" />
+        
     </div>
   )
 }
