@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Axios from './Axios';
+import './row.scss';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -19,11 +20,11 @@ const Row = ({title, fetchUrl}) => {
     console.log(movies);
 
     return(
-        <div>
+        <div className="container">
             <h2>{title}</h2>
-            <div className="container">
+            <div className="movie-container">
                 {movies.map(movie => (
-                    <img className="original_img" src={`${base_url}${movie.poster_path}`} alt={movie.name} />
+                    <img className="movie-poster" src={`${base_url}${movie.poster_path}`} alt={movie.name} />
                 ))}
             </div>
 

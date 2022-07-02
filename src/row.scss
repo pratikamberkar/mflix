@@ -1,11 +1,21 @@
-.container {
+.movie-container {
     display: flex;
+    overflow-x: scroll;
+    padding: 20px;
 
-    img {
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .movie-poster {
         width: 100%;
         object-fit: contain;
-        max-height: 100px;
+        max-height: 150px;
         transition: transform 450ms;
         margin-right: 10px;
+
+        &:hover{
+            transform: scale(1.08);
+        }
     }
 }
